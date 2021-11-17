@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.header{
+	background-color: #323941;
+	height: 48px;
+	& .container{
+		width: 960px;
+		margin: 0px auto;
+	}
+	& .navigation{
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		&  a{
+			color: #fff;
+			font-size: 18px;
+		}
+		& .contacts{
+			display: flex;
+			justify-content: space-around;
+			& img{
+				padding-right: 10px; 
+			}
+		}
+	}
+}

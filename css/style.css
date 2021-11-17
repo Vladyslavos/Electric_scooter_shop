@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #323941;
+  height: 48px;
+}
+.header .container {
+  width: 960px;
+  margin: 0px auto;
+}
+.header .navigation {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .navigation a {
+  color: #fff;
+  font-size: 18px;
+}
+.header .navigation .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header .navigation .contacts img {
+  padding-right: 10px;
+}
