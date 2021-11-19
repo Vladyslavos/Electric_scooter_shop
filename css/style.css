@@ -4,13 +4,14 @@
   text-decoration: none;
 }
 
+.container {
+  width: 960px;
+  margin: 0px auto;
+}
+
 .header {
   background-color: #323941;
   height: 48px;
-}
-.header .container {
-  width: 960px;
-  margin: 0px auto;
 }
 .header .navigation {
   color: #fff;
@@ -20,10 +21,15 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  vertical-align: middle;
+}
+.header .navigation div {
+  padding-top: 13px;
 }
 .header .navigation a {
   color: #fff;
   font-size: 18px;
+  padding-right: 24px;
 }
 .header .navigation .contacts {
   display: -webkit-box;
@@ -33,5 +39,86 @@
       justify-content: space-around;
 }
 .header .navigation .contacts img {
-  padding-right: 10px;
+  padding-right: 24px;
+}
+
+.logo__block {
+  height: 101px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo__block .logo__body {
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.logo__block .logo__body .image_text {
+  padding: 17px 0 0 16.25px;
+}
+.logo__block .director__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 18px;
+  font-size: 13px;
+}
+.logo__block .director__body .director__text {
+  padding: 12px 0 0 5px;
+}
+.logo__block .director__body .director__text a {
+  text-decoration: underline;
+  color: #009EFF;
+}
+
+.scooters__block {
+  height: 260px;
+  background-color: #323941;
+}
+.scooters__block .scooters_top {
+  height: 130px;
+  border-bottom: 1px solid #454c53;
+}
+.scooters__block .scooters_bottom {
+  height: 130px;
+}
+.scooters__block .scooters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: gray;
+}
+.scooters__block .scooters img {
+  padding-top: 11px;
+}
+.scooters__block .scooters div {
+  height: 130px;
+  width: 137px;
+  text-align: center;
+}
+.scooters__block .scooters div:hover {
+  background-color: #009EFF;
+  color: #fff;
+}
+
+.one_day_shipping {
+  height: 48px;
+  background-color: #009EFF;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.one_day_shipping p {
+  padding-top: 13px;
 }
