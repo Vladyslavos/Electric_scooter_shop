@@ -100,3 +100,124 @@
 		padding-top: 13px;
 	}
 }
+.segway_content{
+	height: 818px;
+	display: flex;
+	padding-top: 20px;
+	& .segway_left_side{
+		width: 530px;
+		& .in_stock{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 89px;
+			height: 27px;
+			border: 2px solid #6ACD68;
+			color: #6ACD68;
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 16px;
+		}
+		& .segway_text{
+			padding-top: 11px;
+			color: #323941;
+			font-weight: 700;
+			font-size: 60px;
+			line-height: 70px;
+			width: 530px;
+		}
+		.warranty_block{
+			padding-top: 13px;
+			width: 530px;
+			height: 278px;
+			border: 2px solid #999999;
+			& .warranty_wrapper{
+				padding: 23px 25px 22px 20px;
+			}
+			& p{
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+			}
+			& .warranty_years{
+				display: flex;
+				justify-content: space-between;
+				padding-top: 8px;
+				& div{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 155px;
+					height: 36px;
+					border: 1px solid #999999;
+					font-size: 13px;
+					line-height: 16px;
+					font-weight: 400;
+				}
+			}
+			.price_three_blocks{
+				display: flex;
+				justify-content: space-between;
+				padding-top: 20px;
+				& .first_price_block{
+					height: 65px;
+					& .price_crossed{
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 22px;
+					}
+					& span{
+						font-weight: 700;
+						font-size: 35px;
+						line-height: 42px;
+					}
+				}
+				& .second_price_block{
+					padding-top: 10px;
+					height: 65px;
+					color: #009EFF;
+					font-size: 20px;
+					line-height: 22px;
+					font-weight: 600;
+				}
+			}
+			& .two_buttons{
+				padding-top: 13px;
+				display: flex;
+				justify-content: space-around;
+				& button{
+					width: 230px;
+					height: 48px;
+					color: #fff;
+					font-size: 18px;
+					line-height: 22px;
+					font-weight: 700;
+					background-color: #009EFF;
+					border: none;
+				}
+			}
+		}
+		.payment_methods{
+			padding-top: 25px;
+			& p{
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 22px;
+			}
+			& span{
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 22px;
+			}
+			& .blue_span{
+				color: #009EFF;
+			}
+			& .green_span{
+				color: #3cb03b;
+			}
+		}
+	}
+	& .segway_right_side{
+		width: 430px;
+	}
+}
