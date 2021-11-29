@@ -393,3 +393,133 @@
 	background-size: cover;
 	margin-top: 80px;
 }
+.impressive_features{
+	padding-top: 63px;
+	text-align: center;
+	background-color: #F5F5F5;
+	height: 642px;
+	& h2{
+		font-size: 50px;
+		line-height: 60px;
+		font-weight: 700;
+	}
+	& .immpresive_cards{
+		padding-top: 31px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 24px;
+		grid-row-gap: 60px;
+		align-self: center;
+		align-items: center;
+		justify-items: center;
+		& .feature{
+			display: grid;
+			grid-template-rows: 100px auto;
+			& img{
+				margin: 0 auto;
+			}
+		}
+		& .description{
+			padding-top: 10px;
+			color: #008fe9;
+			font-size: 35px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 43px;
+			text-align: center;
+		}
+		& p{
+			padding-top: 18px;
+			line-height: 22px;
+			font-weight: 400;
+			color: #999999;
+		}
+	}
+}
+.overview_kickscooter{
+	padding-top: 43px;
+	text-align: center;
+	& h2{
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 60px;
+	}
+}
+.smart_usage{
+	height: 547px;
+	display: flex;
+	background-color: #040508;
+	color: #ffff;
+	.smart_text{
+		padding: 150px 0px 0px 207px;
+		& h2{
+			font-size: 40px;
+			line-height: 40px;
+		}
+		& p{
+			font-size: 18px;
+			line-height: 22px;
+			font-weight: 400;
+			padding-top: 18px;
+		}
+	}
+	& img{
+		margin-left: auto;
+        margin-right: 0;
+	}
+}
+.double_brake{
+	display: flex;
+	& .brake_text{
+		padding: 150px 233px 146px 150px;
+		& h2{
+			font-size: 40px;
+			line-height: 40px;
+		}
+		& p{
+			padding-top: 18px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+}
+.front_led_light{
+	display: flex;
+	height: 547px;
+	background-color: #040508;
+	& .led_text{
+		padding: 150px 0px 149px 207px;
+		& h2{
+			color: #fff;
+			font-size: 40px;
+			line-height: 40px;
+		}
+		& p{
+			color: #fff;
+			padding-top: 18px;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	& img{
+		margin-left: auto;
+        margin-right: 0;
+	}
+}
+.folding_mechanism{
+	height: 600px;
+	text-align: center;
+	& h2{
+		font-size: 50px;
+		line-height: 60px;
+	}
+	& p{
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 22px;
+	}
+	& .folding_wrapper{
+		padding-top: 75px;
+	}
+}
