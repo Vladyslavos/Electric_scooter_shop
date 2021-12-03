@@ -523,3 +523,101 @@
 		padding-top: 75px;
 	}
 }
+.folding_recycle{
+	background-color: #0a0d18;
+	display: flex;
+	& .recycle_text{
+		padding: 67px 0px 254px 207px;
+		color: #fff;
+		& h2{
+			font-size: 35px;
+		}
+		& p{
+			font-size: 18px;
+			font-weight: 400;
+			padding-top: 20px;
+		}
+	}
+}
+.fast_charging{
+	display: flex;
+	& .charging_text{
+		padding: 141px 198px 160px 47px;
+		& h2{
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 60px;
+		}
+		& p{
+			padding-top: 18px;
+			width: 394px;
+			font-size: 18px;
+		}
+	}
+}
+.riding_modes{
+	display: flex;
+	background-color: #0a0d18;
+	color: #fff;
+	& .modes_text{
+		padding: 191px 0px 0px 210px;
+		& h2{
+			font-size: 50px;
+			line-height: 60px;
+			font-weight: 700;
+		}
+		& p{
+			padding-top: 18px;
+			width: 417px;
+			font-size: 18px;
+		}
+	}
+}
+.download_manual_block{
+	margin-top: 80px;
+	background-color: #F5F5F5;
+	height: 490px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& .manual{
+		display: flex;
+		border: 5px solid #009EFF;
+		height: 317px;
+		background-color: #fff;
+		& .manual_text{
+			padding-top: 38px;
+			& h2{
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 60px;
+			}
+		}
+		& .btn_pdf{
+			margin-top: 30px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 38px;
+			width: 258px;
+			background-color: #009EFF;
+			& p{
+				color: #fff;
+			}
+		}
+	}
+	& .manual_icons{
+		display: flex;
+		& div{
+			display: flex;
+			padding: 17px 13px 0px 0px;
+			& p{
+				font-size: 16px;
+				line-height: 20px;
+				font-weight: 400;
+				padding-left: 14px;
+			}
+		}
+	}
+
+}
