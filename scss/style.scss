@@ -619,5 +619,141 @@
 			}
 		}
 	}
+}
+/*TABLE LAYOUT*/
+.table_block{
+	padding-top: 90px;
+	& .table_title{
+		text-align: center;
+		& h2{
+			font-size: 50px;
+			font-weight: 700;
+			line-height: 61px;
+		}
+		& p{
+			padding-top: 20px;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	& table{
+		padding-top: 70px;
+		width: 100%;
+		border-collapse:none;
+		border-spacing:0;
+		height: auto;
+		& td{
+			border-bottom: 2px solid #ECECEC;
+		}
+		& tr{
+			padding: 3px;
+			width: 107px;
+			height: 77px;
+		}
+		& .scooter_tr{
+			& td{
+				border-bottom: none;
+			}
+			& img{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+		& .span_parametr{
+			height: 60px;
+			& span:before{
+				content: url('../images/table_img/Vector1.svg');
+				padding-right: 8px;
+			}
+		}
+		& span{
+			color: #009eff;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		& .second_svg{
+			&:before{
+				content: url('../images/table_img/Vector2.svg');
+				padding-right: 8px;
+			}
+		}
+		& .third_svg{
+			&:before{
+				content: url('../images/table_img/Vector3.svg');
+				padding-right: 3px;
+			}
+		}
+		& .fourth_svg{
+			&:before{
+				content: url('../images/table_img/Vector4.svg');
+				padding-right: 8px;
+			}
+		}
+		& .fifth_svg{
+			&:before{
+				content: url('../images/table_img/Vector5.svg');
+				padding-right: 8px;
+			}
+		}
+		& .sixth_svg{
+			&:before{
+				content: url('../images/table_img/Vector6.svg');
+				padding-right: 8px;
+			}
+		}
+		& .seventh_svg{
+			&:before{
+				content: url('../images/table_img/Vector7.svg');
+				padding-right: 8px;
+			}
+		}
+		& .eights_svg{
+			&:before{
+				content: url('../images/table_img/Vector8.svg');
+				padding-right: 8px;
+			}
+		}
+		& .nines_svg{
+			&:before{
+				content: url('../images/table_img/Vector9.svg');
+				padding-right: 8px;
+			}
+		}
+		& .tens_svg{
+			&:before{
+				content: url('../images/table_img/Vector10.svg');
+				padding-right: 8px;
+			}
+		}
+		& .elevens_svg{
+			&:before{
+				content: url('../images/table_img/Vector11.svg');
+				padding-right: 8px;
+			}
+		}
+		& .twelfth_svg{
+			&:before{
+				content: url('../images/table_img/Vector12.svg');
+				padding-right: 8px;
+			}
+		}
 
+	}
+
+	/*
+	table.table_content td,table.table_content th {
+	padding: 3px;
+	width: 30px;
+	height: 77px;
+	}
+	table.table_content th {
+	background: #347c99; 
+	color: #fff; 
+	font-weight: normal;
+	}
+	*/
+	
 }
