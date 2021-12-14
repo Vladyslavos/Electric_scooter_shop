@@ -643,6 +643,9 @@
 			line-height: 22px;
 		}
 	}
+	& .table_wrapper{
+		display: flex;
+	}
 	& table{
 		padding-top: 70px;
 		width: 100%;
@@ -652,6 +655,9 @@
 		& td{
 			border-bottom: 2px solid #ECECEC;
 			vertical-align: top;
+			&:first-child{
+				vertical-align: bottom;
+			}
 		}
 		& tr{
 			padding: 3px;
@@ -756,5 +762,72 @@
 				padding-right: 8px;
 			}
 		}
+		& .no_border td{
+			border-bottom: none;
+		}
+		& .price_card{
+			& td{
+			border-bottom: none;
+			}
+			& h4{
+			font-size: 25px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 23px;
+			letter-spacing: 0em;
+			padding-left: 22%;
+			}
+			& button{
+				margin-top: 15px;
+				height: 44px;
+				width: 187px;
+				color: #fff;
+				background-color: #009EFF;
+				border: none;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 22px;
+				letter-spacing: 0em;
+			}
+		}	
 	}
+	.button_next{
+		padding-top: 760px;
+		& button{
+			height: 70px;
+			width: 70px;
+			border: 2px solid #009eff;
+			background-color: #fff;
+			& .arrow_right{
+			   width: 35px;
+		       height: 35px;
+		       border-top: 3px solid #009eff;
+		       border-right: 3px solid #009eff;
+		       transform: rotate(45deg);
+			}
+		}
+	}
+
+	.protective_gift{
+		margin-top: 122px;
+		width: 963px;
+		height: 243px;
+		border: 5px solid #009EFF;
+		& .gift_wrapper{
+			display: flex;
+			justify-content: space-around;
+			padding-top: 30px;
+			& h2{
+				font-size: 50px;
+				line-height: 60px;
+				font-weight: 700;
+			}
+			& p{
+				font-size: 18px;
+				line-height: 22px;
+			}
+		}
+	}
+		
 }
