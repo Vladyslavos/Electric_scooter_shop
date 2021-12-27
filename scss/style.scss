@@ -879,10 +879,13 @@
 	}
 }
 .control_smartphone{
-	height: 774px;
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #EEEEEE 0%, rgba(245, 245, 245, 0.79) 43.81%, rgba(255, 255, 255, 0) 82.46%);
-    opacity: 0.59;
-    text-align: center;
+    	text-align: center;
+	& .control_wrapper{
+		height: 774px;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	
     & .control_wrapper{
     	padding-top: 63px;
     }
@@ -898,27 +901,47 @@
 		line-height: 22px;
 		padding-top: 16px;
     }
-    & .hexagon_block{
+    & .control_content{
+    	padding-top: 48px;
+    	max-width: 800px;
+    	margin: 0 auto;
     	display: flex;
-    	background-color: green;
-    	& .hexagon_left_side{
-
-    		& .hexagon{
-    			width: 100%;
-				height: 100%;
-				background: #26C6DA;
-				transform: rotate(-60deg);
-    			& .hexagon_inside{
-    				  width: 100%;
-					  height: 100%;
-					  background: #B2DFDB;
-					  transform: rotate(-60deg);
-					  visibility: visible;
-    			}
-    			//https://codepen.io/Paul2512C/pen/BaygGMG
-
-    		}
+    	justify-content: space-between;
+    	& .circele_side{
+    		display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 20px;
+			grid-row-gap: 20px;
+			padding-top: 50px;
+			& .circle_img{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				vertical-align: center;
+				background-repeat: no-repeat;
+				width: 98px;
+				height: 98px;
+				border: 2px solid #CCC;
+				border-radius: 50%;
+				margin: 0 auto;
+					&:hover{
+					background-color: #009EFF;
+				}
+			}
+			& p{
+				font-weight: 400;
+				font-size: 13px;
+				line-height: 16px;
+				content-align: center;
+				color: #CCC;
+			}
     	}
+    	& .logos{
+			display: flex;
+			justify-content: space-around;
+			padding-top: 20px;
+		}
     }
 }
+
 
