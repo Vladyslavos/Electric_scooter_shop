@@ -3,8 +3,12 @@
 	padding: 0;
 	text-decoration: none;
 }
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+}
 .container{
-	width: 960px;
+	max-width: 960px;
 	margin: 0px auto;
 }
 .header{
@@ -937,7 +941,7 @@
 			}
     	}
     	& .logos{
-    		padding-top: 26px;
+    		padding-top: 20px;
     		display: flex;
     		justify-content: space-around;
     	}
@@ -979,7 +983,6 @@
 			height: 316px;
 			&:last-child{
 				width: 173px;
-				text-align: center;
 				& p{
 					font-weight: 400;
 					font-size: 16px;
@@ -1010,90 +1013,7 @@
 				font-weight: 600;
 				}
 			}
-			& .elipse{
-				margin: 0 auto;
-				height: 123px;
-				width: 123px;
-				border-radius: 50%;
-				background-color: #eeeeee;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin: 0 auto;
-			}
 		}
-	}
-}
-
-
-//FOR WATCH
-.accessories__block{
-	text-align: center;
-	padding-top: 63px;
-	& h2{
-		font-weight: 700;
-		font-size: 50px;
-		line-height: 60px;
-	}
-}
-.accessories__wrapper{
-	padding-top: 31px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-column-gap: 24px;
-	grid-row-gap: 60px;
-	align-self: center;
-	align-items: center;
-	justify-items: center;
-	& .card{
-		height: 375px;
-		width: 295px;
-			& button{
-			width: 129px;
-			height: 42px;
-			font-size: 13px;
-			line-height: 16px;
-			color: #C6C6C6;
-			margin-top: 15px;
-			border: 1px solid #C6C6C6;
-			&:hover{
-				background-color: #009EFF;
-				color: #fff;
-				line-height: 22px;
-				font-weight: 600;
-			}
-		}
-	}
-	& .elipse{
-		margin: 0 auto;
-		height: 150px;
-		width: 150px;
-		border-radius: 50%;
-		background-color: #eeeeee;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	& h3{
-		font-weight: 700;
-		font-size: 25px;
-		line-height: 23px;
-		padding-top: 18px;
-	}
-	& p{
-		font-weight: 400;
-		font-size: 13px;
-		line-height: 16px;
-		color: #999999;
-		padding-top: 16px;
-		width: 280px;
-		height: 75px;
-	}
-	& span{
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 22px;
 	}
 }
 footer{
@@ -1119,7 +1039,23 @@ footer{
 	}
 }
 
-
-
-
-
+//MEDIA QUERIES
+@media (max-width: 1300px) {
+	.folding_recycle{
+		& .recycle_text{
+			padding: 67px 0px 254px 100px;
+		}
+		& img{
+			width: 540px;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.segway_right_side img{
+		height: 700px;
+		width: 600px;
+	}
+	.container{
+		max-width: 900px;
+	}
+}
