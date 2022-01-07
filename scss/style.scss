@@ -11,7 +11,7 @@
 	max-width: 960px;
 	margin: 0px auto;
 }
-.header{
+header{
 	background-color: #323941;
 	height: 48px;
 	& .navigation{
@@ -400,7 +400,7 @@
 	height: 724px;
 	background-image: url('../images/people_on_scooter.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	margin-top: 80px;
 }
 .impressive_features{
@@ -611,7 +611,7 @@
 			height: 38px;
 			width: 258px;
 			background-color: #009EFF;
-			& p{
+			& a{
 				color: #fff;
 			}
 		}
@@ -1050,12 +1050,108 @@ footer{
 		}
 	}
 }
+
+
 @media (max-width: 1200px) {
 	.segway_right_side img{
 		height: 700px;
-		width: 600px;
+		width: 500px;
 	}
 	.container{
-		max-width: 900px;
+		max-width: 920px;
+	}
+
+	.logo__block{
+	height: 90px;
+	& .logo__body{
+		padding-top: 16px;
+	}
+	& .director__body{
+		padding-top: 16px;
+		font-size: 11px;
 	}
 }
+	.scooters__block{
+		height: 240px;
+		background-color: #323941;
+		text-align: center;
+		& .scooters{
+			& div{
+				height: 120px;
+				width: 130px;
+			}
+		}
+	}
+	.fast_charging{
+		& img{
+			max-width: 560px;
+		}
+		& .charging_text{
+		padding: 141px 198px 160px 0px;
+		& h2{
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 60px;
+		}
+		& p{
+			padding-top: 18px;
+			width: 394px;
+			font-size: 18px;
+		}
+	}
+}
+.protective_gift{
+		margin-top: 115px;
+		max-width: 920px;
+		height: 233px;
+		border: 4px solid #009EFF;
+		& .gift_wrapper{
+			padding-top: 28px;
+			& h2{
+				font-size: 45px;
+			}
+			& p{
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+	}	
+}
+.segway_right_side img{
+		height: 700px;
+		width: 550px;
+	}
+
+
+@media (max-width: 1050px) {
+	header{
+		height: 42px;
+		&  a{
+			font-size: 15px;
+			padding-right: 20px;
+		}
+	}
+
+	.feedback_block{
+	margin-top: 80px;
+	height: 700px;
+	& .feedback_wrapper{
+		padding-top: 60px;
+		& h2{
+			font-weight: 700;
+			font-size: 45px;
+		}
+	}
+	& .img_reviews img{
+		width: 262px;
+	}
+	& .reviews{
+		padding-top: 36px;
+		& button{
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+}
+
