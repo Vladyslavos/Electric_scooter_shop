@@ -26,12 +26,19 @@ header{
 			color: #fff;
 			font-size: 18px;
 			padding-right: 24px;
+			&:hover{
+			color: #009EFF;
+			}
 		}
 		& .contacts{
 			display: flex;
 			justify-content: space-around;
 			& img{
 				padding-right: 24px;
+				cursor: pointer;
+				&:hover{
+					transform: scale(1) translateY(-7px);
+				}
 			}
 		}
 	}
@@ -78,9 +85,11 @@ header{
 			height: 130px;
 			width: 137px;
 			color: #777c81;
+			cursor: pointer;
 			&:hover{
 				background-color: #009EFF;
 				color: #fff;
+				transition-duration: 0.4s;
 			}
 		}
 
@@ -108,6 +117,11 @@ header{
 	font-weight: 400;
 	& p{
 		padding-top: 13px;
+	}
+	&:hover{
+		color: #009EFF;
+		background-color: #fff;
+		transition: 0.2s;
 	}
 }
 .segway_content{
@@ -203,6 +217,11 @@ header{
 					font-weight: 700;
 					background-color: #009EFF;
 					border: none;
+					&:hover{
+						background-color: #fff;
+						color: #009EFF;
+						transition-duration: 0.4s;
+					}
 				}
 			}
 		}
@@ -351,6 +370,7 @@ header{
 				color: #fff;
 				line-height: 22px;
 				font-weight: 600;
+				transition-duration: 0.4s;
 			}
 		}
 	}
@@ -395,12 +415,17 @@ header{
 	line-height: 22px;
 	font-weight: 600;
 	border: none;
+	&:hover{
+		background-color: #fff;
+		color: #009EFF;
+		transition-duration: 0.2s;
+	}
 }
 .people_onscooter_block{
 	height: 724px;
 	background-image: url('../images/people_on_scooter.png');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	margin-top: 80px;
 }
 .impressive_features{
@@ -793,6 +818,11 @@ header{
 				font-weight: 700;
 				line-height: 22px;
 				letter-spacing: 0em;
+				&:hover{
+					background-color: #fff;
+					color: #009EFF;
+					transition-duration: 0.2s;
+				}
 			}
 		}	
 	}
@@ -930,6 +960,7 @@ header{
 				margin: 0 auto;
 					&:hover{
 					background-color: #009EFF;
+					transition-duration: 0.4s;
 				}
 			}
 			& p{
@@ -981,6 +1012,11 @@ header{
 		& .card{
 			width: 130px;
 			height: 316px;
+			& .elipse{
+				width: 123px;
+				height: 123px;
+				border-radius: 50%;
+			}
 			&:last-child{
 				width: 173px;
 				& p{
@@ -1009,8 +1045,7 @@ header{
 				&:hover{
 				background-color: #009EFF;
 				color: #fff;
-				line-height: 22px;
-				font-weight: 600;
+				transition-duration: 0.4s;
 				}
 			}
 		}
@@ -1150,8 +1185,21 @@ footer{
 		& button{
 			width: 60px;
 			height: 60px;
+			background-color: #fff;
+			border: 2px solid #009eff;
+			position: relative;
+		    top: 200px;
 		}
 	}
+	.people_onscooter_block{
+	background-size: contain;
+}
+}
+.scooter_overview-img{
+	width: 700px;
+}
+.riding_modes img{
+	padding-right: 190px;
 }
 }
 
