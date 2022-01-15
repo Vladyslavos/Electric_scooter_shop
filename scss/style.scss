@@ -7,6 +7,40 @@
 	min-height: 100%;
 	overflow: hidden;
 }
+//Customizing webkit highlight
+::selection {background: #ccc;}
+::-moz-selection {background: #ccc;}
+::-webkit-selection {background: #ccc; color:#fff;}
+//Customizing webkit scrollbar
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #d4d4d4;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009EFF;
+    border-radius: 8px;
+    border: 3px solid #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #323941;
+}
+//back 2 top button
+.back2Top{
+	position: fixed;
+	right: 30px;
+	bottom: 100px;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 4px solid ease;
+
+}
 .container{
 	max-width: 960px;
 	margin: 0px auto;
@@ -506,6 +540,7 @@ header{
 }
 .double_brake{
 	display: flex;
+	background-color: #e4e4e4;
 	& .brake_text{
 		padding: 150px 233px 146px 150px;
 		& h2{
@@ -522,7 +557,7 @@ header{
 .front_led_light{
 	display: flex;
 	height: 547px;
-	background-color: #040508;
+	background-color: #000000;
 	& .led_text{
 		padding: 150px 0px 149px 207px;
 		& h2{
@@ -1054,12 +1089,14 @@ header{
 footer{
 	background-color: #32393F;
 	height: 91px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	position: relative;
 	& .footer_content{
+		position: absolute;
+		top: 0;
+		bottom: 0;
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		& .contacts{
 			display: flex;
 			align-items: center;
@@ -1097,15 +1134,15 @@ footer{
 	}
 
 	.logo__block{
-	height: 90px;
-	& .logo__body{
-		padding-top: 16px;
+		height: 90px;
+		& .logo__body{
+			padding-top: 16px;
+		}
+		& .director__body{
+			padding-top: 16px;
+			font-size: 11px;
+		}
 	}
-	& .director__body{
-		padding-top: 16px;
-		font-size: 11px;
-	}
-}
 	.scooters__block{
 		height: 240px;
 		background-color: #323941;
@@ -1134,28 +1171,28 @@ footer{
 			font-size: 18px;
 		}
 	}
-}
-.protective_gift{
-		margin-top: 115px;
-		max-width: 920px;
-		height: 233px;
-		border: 4px solid #009EFF;
-		& .gift_wrapper{
-			padding-top: 28px;
-			& h2{
-				font-size: 45px;
+	.protective_gift{
+			margin-top: 115px;
+			max-width: 920px;
+			height: 233px;
+			border: 4px solid #009EFF;
+			& .gift_wrapper{
+				padding-top: 28px;
+				& h2{
+					font-size: 45px;
+				}
+				& p{
+					font-size: 16px;
+					line-height: 22px;
+				}
 			}
-			& p{
-				font-size: 16px;
-				line-height: 22px;
-			}
-		}
-	}	
-}
-.segway_right_side img{
+		}	
+	}
+	.segway_right_side img{
 		height: 700px;
 		width: 550px;
 	}
+}
 
 
 @media (max-width: 1050px) {
