@@ -5,18 +5,22 @@
 	<meta name="viewport" content="width=device-width">
 	<title>ScooterShop</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="header">
 			<div class="container">
+				<div class="menu__icon">
+					<span></span>
+				</div>
 				<div class="navigation">
 					<div class="nav">
-						<a href="#!">REVIEWS</a>
-						<a href="#!">SHIPPING AND PAYMENT</a>
-						<a href="#!">WHOLESALE</a>
-						<a href="#!">BLOG</a>
-						<a href="#!">CONTACS</a>
+						<a data-goto=".feedback_block" href="#!" class="menu__link">REVIEWS</a>
+						<a data-goto=".segway__block-second" href="#!" class="menu__link">SHIPPING AND PAYMENT</a>
+						<a data-goto=".accessories__block-other" href="#!" class="menu__link">WHOLESALE</a>
+						<a data-goto=".smart_usage" href="#!" class="menu__link">BLOG</a>
+						<a data-goto=".footer" href="#!" class="menu__link">CONTACS</a>
 					</div>
 						
 					<div class="contacts">
@@ -30,7 +34,7 @@
 
 		<div class="container">
 			<div class="logo__block">
-				<div class="logo__body">
+				<div class="logo__body" data-aos="fade-right">
 					<div class="image_logo">
 						<img src="images/Logo.png">
 					</div>
@@ -40,7 +44,7 @@
 					</div>
 				</div>
 
-				<div class="director__body">
+				<div class="director__body" data-aos="fade-left">
 					<div class="director_image">
 						<img src="images/director 1.png">
 					</div>
@@ -55,7 +59,7 @@
 		</div>
 		<div class="scooters__block">
 			<div class="container">
-				<div class="scooters">
+				<div class="scooters" data-aos="fade-up">
 					<div class="scooter_card">
 						<figure>
 							<img src="images/scooter1.png" class="scooter_image_1" alt="scooter_image">
@@ -139,12 +143,8 @@
 							<img src="images/scooter14.png" class="scooter_image_14" alt="scooter_image">
 							<figcaption>KS E22</figcaption>
 						</figure>
-					</div>
-					
-					
-					
+					</div>	
 				</div>
-				
 			</div>
 		</div>
 		<div class="one_day_shipping">
@@ -154,7 +154,7 @@
 		<div class="segway__block">
 			<div class="container">
 				<div class="segway_content">
-					<div class="segway_left_side">
+					<div class="segway_left_side" data-aos="fade-left">
 						<div class="in_stock">
 							<p>In stock</p>
 						</div>
@@ -214,7 +214,7 @@
 						</div>	
 					</div>
 
-					<div class="segway_right_side">
+					<div class="segway_right_side" data-aos="fade-right">
 						<img src="images/segway_right_side.png">
 					</div>
 				</div>
@@ -254,12 +254,12 @@
 		</div>
 		<div class="packing_list_block">
 			<div class="packing_wrapper">
-				<div class="packing_left">
+				<div class="packing_left" data-aos="fade-right">
 					 <h2>PACKING LIST</h2>
 					 <img src="images/VIDEO.png" class="video">	
 				</div>
 
-				<div class="packing_right">
+				<div class="packing_right" data-aos="fade-left">
 					<div class="right_image">	
 					 <img src="images/Packing_image.png">
 				    </div>
@@ -267,7 +267,7 @@
 			</div>	
 	   </div>	
 
-		<div class="accessories__block">
+		<div class="accessories__block" data-aos="fade-up">
 			<div class="container">
 				<h2>ACCESSORIES</h2>
 				<div class="accessories__wrapper">
@@ -356,8 +356,8 @@
 				<button class="see_more">SEE MORE</button>
 			</div>
 		</div>
-		<div class="people_onscooter_block"></div>
-		<div class="impressive_features">
+		<div class="people_onscooter_block" data-aos="fade-up"></div>
+		<div class="impressive_features" data-aos="fade-up">
 			<h2>IMPRESSIVE FEATURES</h2>
 			<div class="container">
 				<div class="immpresive_cards">
@@ -404,7 +404,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="overview_kickscooter">
+		<div class="overview_kickscooter" data-aos="fade-down">
 			<div class="container">
 				<div class="sccoter_body">
 					<h2>KICKSCOOTER OVERVIEW</h2>
@@ -414,63 +414,63 @@
 			</div>
 		</div>
 		<div class="smart_usage">
-			<div class="smart_text">
+			<div class="smart_text" data-aos="fade-right">
 				<h2>SMART BATTERY<br>MANAGEMENT SYSTEM<br>(SMART-BMS)</h2>
 				<p>The Smart-BMS closely monitors the battery status with multiple protection mechanisms to ensure the battery durability</p>	
 			</div>
-			<img src="images/Smart_usage.png" alt="smart_usage" role="presentation">
+			<img src="images/Smart_usage.png" alt="smart_usage" role="presentation" data-aos="fade-left">
 		</div>
 		<div class="double_brake">
-			<img src="images/double_brake.png" alt="double_brake" role="presentation">
-			<div class="brake_text">
+			<img src="images/double_brake.png" alt="double_brake" role="presentation" data-aos="fade-right">
+			<div class="brake_text" data-aos="fade-left">
 				<h2>DUAL BRAKING<br>SYSTEM</h2>
 				<p>Simultaneous mechanical front drum brake<br> and regenerative electric back brake provide<br> both stability and steerability.<br></p>
 				<p>*IPX5 water resistance</p>
 			</div>	
 		</div>
 		<div class="front_led_light">
-			<div class="led_text">
+			<div class="led_text" data-aos="fade-right">
 				<h2>BUILT-IN FRONT<br> LED LIGHT</h2>
 			    <p>Front-facing lights are designed with 2.5w high-brightness LED light to illuminate the path ahead of you and increase your visibility to others around you.</p>
 				<p>*Disclaimer: for your safety, please try not to ride at night</p>
 			</div>
 			
 
-			<img src="images/front_led_light.png" alt="led_light" role="presentation">
+			<img src="images/front_led_light.png" alt="led_light" role="presentation" data-aos="fade-left">
 		</div>
 		<div class="folding_mechanism">
 			<div class="container">
 				<div class="folding_wrapper">
 					<h2>ONE-STEP FOLDING MECHANISM</h2>
 				    <p>Ninebot KickScooter MAX can be easily folded and carried around in 3 seconds</p>
-				    <img src="images/Folding_img.png" alt="folding_img" role="presentation">
+				    <img src="images/Folding_img.png" alt="folding_img" role="presentation" data-aos="fade-down">
 				</div>
 			</div>
 		</div>
 
 		<div class="folding_recycle">
-			<div class="recycle_text">
+			<div class="recycle_text" data-aos="fade-right">
 				<h2>REGENERATIVE BRAKE FOR POWER RECYCLE</h2>
 				<p>The innovative regenerative brake system turns Ninebot KickScooter MAX into an electric vehicle powered by electricity and recycled energy from riding. Energy will be collected from regenerative braking and distributed when you need a boost.</p>
 			</div>
-			<img src="images/folding_recycle.png" role="presentation">
+			<img src="images/folding_recycle.png" role="presentation" data-aos="fade-left">
 		</div>
 		<div class="fast_charging">
-			<img src="images/fast_charging.png" role="presentation">
-			 <div class="charging_text">
+			<img src="images/fast_charging.png" role="presentation" data-aos="fade-up">
+			 <div class="charging_text" data-aos="fade-down">
 				<h2>EASY ONE CORD<br>FAST CHARGING</h2>
 				<p>The built-in charger lets riders recharge it easily when on the go without having to carry along a bulky charging adapter. 3A fast charge will give Ninebot KickScooter MAX a full charge in 6 hours.</p>
 			</div>	
 		</div>
 
 		<div class="riding_modes">
-			<div class="modes_text">
+			<div class="modes_text" data-aos="fade-right">
 				<h2>3 RIDING MODES</h2>
 				<p>Eco, Standard, and Sports modes can be directly accessed by the intuitive LED dashboard, which also displays maintenance signals, power levels, Bluetooth connectivity and more.</p>
 			</div>
-			<img src="images/riding_modes.png" role="presentation">
+			<img src="images/riding_modes.png" role="presentation" data-aos="fade-left">
 		</div>
-		<div class="download_manual_block">
+		<div class="download_manual_block" data-aos="fade-up">
 			<div class="container">
 				<div class="manual">
 					<img src="images/manual_img.png" role="presentation">
@@ -499,7 +499,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="table_block">
+		<div class="table_block" data-aos="fade-right">
 			<div class="table_title">
 				<h2>COMPARE SPECIFICATIONS</h2>
 				<p>Add model to compare</p>
@@ -708,7 +708,7 @@
 				</div>			
 			</div>
 		</div>
-		<div class="feedback_block">
+		<div class="feedback_block" data-aos="fade-left">
 			<div class="feedback_wrapper">
 				<h2>REVIEWS</h2>
 					<div class="reviews">
@@ -737,7 +737,7 @@
 				<p>You can easily control your Segway electric scooter with your smartphone via Bluetooth. Not being the key to the kickscooter, it will give a signal in case of an attempt to steal. Check the current speed, data on the status of the device's systems or set the speed limit with a few touches.
 				And the skating training program is indispensable for beginners.</p>
 				<div class="control_content">
-					<div class="circle_wrapper">
+					<div class="circle_wrapper" data-aos="fade-right">
 						<div class="circele_side">
 							<div class="circle">
 								<div class="circle_content">
@@ -803,13 +803,13 @@
 							</div>
 						</div>
 					</div>  
-					<img src="images/hexagon_phone.png">  
+					<img src="images/hexagon_phone.png" data-aos="fade-left">  
 				</div>
 			</div>
 		</div>
 		<div class="segway__block-second">
 			<div class="segway_content">
-				<div class="segway_left_side">
+				<div class="segway_left_side" data-aos="fade-right">
 					<div class="in_stock">
 						<p>In stock</p>
 					</div>
@@ -868,13 +868,13 @@
 							</div>
 					   </div>	
 				   </div>
-				<div class="segway_right_side">
+				<div class="segway_right_side" data-aos="fade-left">
 					<img src="images/segway_right_side2.png">
 				</div>
 			</div>
 		</div>
 
-		<div class="accessories__block-other">
+		<div class="accessories__block-other" data-aos="fade-up">
 			<div class="container">
 				<h2>OTHER MODELS</h2>
 				<p>Check out the entire line of Segway scooters</p>
@@ -947,7 +947,7 @@
 				</div>
 		    </div>
 		</div>
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container">
 				<div class="footer_content">
 					<div class="logo">
@@ -961,7 +961,15 @@
 				</div>
 			</div>
 		</footer>
+		<button class="back2Top" id="top">TO TOP</button>
     </div> 
+    <script src="./JS/scrollUp.js"></script>
+    <script src="./JS/menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  		AOS.init();
+	</script>
+
 </body>
 </html>
 
