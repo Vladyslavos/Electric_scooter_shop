@@ -21,6 +21,16 @@ if (menuLinks.length > 0) {
 }
 
 //Scroll-up script
+window.onscroll = function () {
+    const scrolled = window.pageYOffset || document.documentElement.scrollTop,
+          topBtn = document.getElementById('top');
+    if (scrolled > 700) {
+    	topBtn.style.visibility = 'visible';
+    } else {
+    	topBtn.style.visibility = 'hidden';
+    }
+}
+
 window.onload = () => {
 	var scrolled;
 	var timer;
@@ -41,3 +51,36 @@ window.onload = () => {
 		}
 	}
 }
+//Packing list block script
+let tabNavItem = document.querySelectorAll('.tab-nav-item');
+
+let tabContentItem = document.querySelectorAll('.tab__content');
+
+
+
+tabNavItem.forEach(function(elem) {
+   elem.addEventListener('click', activeTab);
+   })
+
+function activeTab() {
+   tabNavItem.forEach(function(elem){
+      elem.classList.remove('active');
+   })
+   this.classList.add('active');
+   let tabName = this.getAttribute('data-tab');
+
+   activeTabContent(tabName);
+}
+
+function activeTabContent (tabName) {
+   tabContentItem.forEach(function(item){
+      if (item.classList.contains(tabName)) {
+         item.classList.add('active');
+      } else {
+         item.classList.remove('active');
+      }
+   })
+}
+
+
+

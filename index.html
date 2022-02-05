@@ -26,7 +26,7 @@
 					<div class="contacts">
 						<img src="images/Vector.png" class="basket">
 						<img src="images/instagram.png" class="instagram">
-						<p>+1 (888) 888-88-88</p>
+						<a href="tel:+1 (888) 888-88-88">+1 (888) 888-88-88</a>
 					</div>
 				</div>
 			</div>
@@ -224,35 +224,67 @@
 		<div class="packing_list__block">
 			<div class="container">
 				<div class="after_sales_block">
-					<div class="first_sale">
+					<button class="first_sale tab-nav-item" data-tab="tab-1">
 						<img src="images/packing_list_block/Vector.png">
 						<p>Delivery within<br> 1 business day</p>
-					</div>
-					<div class="second_sale">
+					</button>
+					<button class="second_sale tab-nav-item" data-tab="tab-2">
 						<img src="images/packing_list_block/Vector2.png">
 						<p>Basic 1 year<br>warranty</p>
-					</div>
-					<div class="third_sale">
+					</button>
+					<button class="third_sale tab-nav-item" data-tab="tab-3">
 						<img src="images/packing_list_block/Vector3.png">
 						<p>After Sales<br> Support</p>
-					</div>
-					<div class="fourth_sale">
+					</button>
+					<button class="fourth_sale tab-nav-item active" data-tab="tab-4">
 						<img src="images/packing_list_block/Vector4.png">
 						<p>Up to 40 miles<br> per charge</p>
-					</div>
+					</button>
 			   </div>
-			   <div class="after_sales_info">
-			   	<div class="info_left_side">
-			   		<h2>UP TO 40 MILES OF RANGE<br> ON A SINGLE CHARGE</h2>
-			   		<p>With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.</p>
-			   	</div>
-			   	<div class="info_right_side">
-			   	<img src="images/40_miles.png" role="presentation" alt="40_miles">	
-			   	</div>
+			   <div class="show__form">
+			   	<div class="after_sales_info tab__content tab-1">
+				   	<div class="info_left_side">
+				   		<h2>WE ARE IN LOS<br> LOS ANGELES, CA</h2>
+				   		<p>Free California 1 day shipping.<br>US Free Shipping 3-5 Days</p>
+				   	</div>
+				   	<div class="info_right_side">
+				   	<img src="images/tabs_img/tab1.png" role="presentation" alt="40_miles">	
+				   	</div>
+			   </div>
+
+			   	<div class="after_sales_info tab__content tab-2">
+				   	<div class="info_left_side">
+				   		<h2>AFTER SALES<br>SUPPORT</h2>
+				   		<p>If you have any difficulties with your kickscooter, our specialists will<br> contact you within 15 minutes</p>
+				   	</div>
+				   	<div class="info_right_side">
+				   	<img src="images/tabs_img/tab2.png" role="presentation" alt="40_miles">	
+				   	</div>
+			   </div> 	
+
+			   	<div class="after_sales_info tab__content tab-3">
+				   	<div class="info_left_side">
+				   		<h2>ONE YEAR<br> MANNUFACTURER'S WARRANTY</h2>
+				   		<p>The basic warranty is 1 year.
+						You can also extend the warranty up to 4 years.</p>
+				   	</div>
+				   	<div class="info_right_side">
+				   	<img src="images/tabs_img/tab3.png" role="presentation" alt="40_miles">	
+				   	</div>
+			   </div> 	
+			   	<div class="after_sales_info tab__content tab-4 active">
+				   	<div class="info_left_side">
+				   		<h2>UP TO 40 MILES OF RANGE<br> ON A SINGLE CHARGE</h2>
+				   		<p>With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.</p>
+				   	</div>
+				   	<div class="info_right_side">
+				   	<img src="images/tabs_img/tab4.png" role="presentation" alt="40_miles">	
+				   	</div>
+			   </div> 	
 			   </div>
 			</div>
 		</div>
-		<div class="packing_list_block">
+		<div class="packing_list_video">
 			<div class="packing_wrapper">
 				<div class="packing_left" data-aos="fade-right">
 					 <h2>PACKING LIST</h2>
@@ -796,10 +828,10 @@
 						
 						<div class="logos">
 							<div class="apple_logo">
-								<img src="images/Apple.png">
+								<img src="images/Apple.png" class="apple_logo_img" src="apple_logo_img">
 							</div>
 							<div class="google_logo">
-								<img src="images/Google.png">
+								<img src="images/Google.png" class="google_logo_img" src="google_logo_img">
 							</div>
 						</div>
 					</div>  
@@ -961,7 +993,7 @@
 				</div>
 			</div>
 		</footer>
-		<button class="back2Top" id="top">TO TOP</button>
+		<button class="back2Top" id="top"><img src="images/up-arrow.png" class="arrow_img"></button>
     </div> 
     <script src="./JS/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

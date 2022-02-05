@@ -31,6 +31,10 @@
 }
 //back 2 top button
 .back2Top{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	visibility: hidden;
 	position: fixed;
 	right: 30px;
 	bottom: 100px;
@@ -38,7 +42,40 @@
 	height: 60px;
 	cursor: pointer;
 	border-radius: 50%;
-	border: 4px solid ease;
+	background-color: #fff;
+	border: 3px solid #29AEE3;
+	&:hover{
+		border: 3px solid #009EFF;
+		background-color: #323941;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		border: 2px solid #29AEE3;
+		left: -20px;
+		right: -20px;
+		top: -20px;
+		bottom: -20px;
+		border-radius: 50%;
+		animation: pulse 1.8s linear infinite;
+	}
+	& .arrow_img{
+		width: 40px;
+		height: 50px;
+	}
+}
+@keyframes pulse{
+	0% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.2);
+		opacity: 0;
+	}
 }
 .container{
 	max-width: 960px;
@@ -69,6 +106,8 @@ header{
 			& img{
 				padding-right: 24px;
 				cursor: pointer;
+				width: 20px;
+				height: 20px;
 				&:hover{
 					transform: scale(1) translateY(-7px);
 				}
@@ -151,13 +190,6 @@ header{
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 400;
-	&:hover{
-		position: relative;
-		height: 100px;
-		color: #009EFF;
-		background-color: #fff;
-		transition: 0.2s;
-	}
 	& p{
 		padding-top: 13px;
 	}
@@ -301,18 +333,20 @@ header{
 	padding-top: 30px;
 	& .after_sales_block{
 		display: flex;
-		& div{
+		& button{
 			width: 235px;
 			height: 63px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			border: none;
+			cursor: pointer;
 			& p{
 				padding-left: 15px;
+				color: #999999;
+				font-size: 16px;
+				line-height: 22px;
 			}
-		}
-		& .fourth_sale{
-			background-color: #009EFF;
 		}
 	}
 	& .after_sales_info{
@@ -338,10 +372,19 @@ header{
 			width: 530px;
 			height: 66px;
 		}
+		&.tab__content{
+			display: none;
+		}
+		&.active{
+			display: flex;
+		}
 	}
 }
-.packing_list_block{
-	background: linear-gradient(0deg, #EEEEEE 0%, rgba(245, 245, 245, 0.79) 43.81%, rgba(255, 255, 255, 0) 82.46%);
+.active{
+  background-color: #009EFF;
+}
+.packing_list_video{
+	
 	padding-top: 53px;
 	height: 500px;
 	& .packing_wrapper{
@@ -997,6 +1040,7 @@ header{
 				border: 2px solid #CCC;
 				border-radius: 50%;
 				margin: 0 auto;
+				cursor: pointer;
 					&:hover{
 					background-color: #009EFF;
 					transition-duration: 0.4s;
@@ -1014,6 +1058,13 @@ header{
     		padding-top: 20px;
     		display: flex;
     		justify-content: space-around;
+    		cursor: pointer;
+    		& .apple_logo_img:hover{
+    			box-shadow: 0 5px 15px 0 rgba(0,0,0,0.7);
+    		}
+    		& .google_logo_img:hover{
+    			box-shadow: 0 5px 15px 0 rgba(0,0,0,0.7);
+    		}
     	}
     }
 }
@@ -1277,8 +1328,7 @@ footer{
 		top: 50%;
 		transform: scale(1) translate(0px, -50%);
 	}
-	.menu__body{
-		
+	.menu__body{	
 	}
 
 }
