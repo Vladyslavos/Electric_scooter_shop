@@ -81,6 +81,3 @@ function activeTabContent (tabName) {
       }
    })
 }
-
-
-

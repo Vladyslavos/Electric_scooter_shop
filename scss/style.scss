@@ -333,7 +333,7 @@ header{
 	padding-top: 30px;
 	& .after_sales_block{
 		display: flex;
-		& button{
+		& div{
 			width: 235px;
 			height: 63px;
 			display: flex;
@@ -384,7 +384,6 @@ header{
   background-color: #009EFF;
 }
 .packing_list_video{
-	
 	padding-top: 53px;
 	height: 500px;
 	& .packing_wrapper{
